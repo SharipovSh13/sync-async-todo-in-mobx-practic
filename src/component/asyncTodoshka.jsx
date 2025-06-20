@@ -95,7 +95,7 @@ const AsyncTodoshka = observer(() => {
       )}
 
       <button
-        className="bg-gray-400/30 border-b-2 border-black/30 ml-4 p-1 rounded"
+        className="bg-gradient-to-r from-violet-500 to-te rounded p-1 shadow-lg text-white"
         onClick={() => {
           setAddmodal(true);
         }}
@@ -108,10 +108,13 @@ const AsyncTodoshka = observer(() => {
           return (
             <div
               key={el.id}
-              className="bg-gray-100 rounded border-b-2 border-black/30  p-2 text-center h-32 flex flex-col space-y-4"
+              className="bg-gradient-to-r from-purple-700 to-pink-600 rounded-lg p-6 shadow-lg text-white h-32 flex flex-col space-y-4"
             >
               <h1>{el.name}</h1>
-              <div className="bg-gray-300 rounded border-b-2 border-black/10 flex justify-around p-1">
+              <div
+                className="bg-gradient-to-r from-gray-300 to-gray-200/60
+               rounded border-b-2 border-black/10 flex justify-around p-1"
+              >
                 <button
                   className="w-fit p-1 bg-green-500 rounded"
                   onClick={() => AsyncTodo.delka(el.id)}

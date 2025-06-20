@@ -8,7 +8,7 @@ function App() {
       <div className="bg-violet-100/60 p-2 mb-4">
         <Counter />
       </div>
-      <div className="bg-violet-400/40 p-2">
+      <div className="bg-gradient-to-r from-blue-500/80 to-violet-600 rounded p-4 shadow-lg text-white">
         <AsyncTodoshka />
       </div>
     </>

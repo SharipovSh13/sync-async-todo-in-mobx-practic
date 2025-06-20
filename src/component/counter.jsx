@@ -102,11 +102,11 @@ const Counter = observer(() => {
         Add
       </button>
 
-      <div className="flex w-[95%]  m-auto justify-between items-center flex-wrap gap-4 ">
+      <div className="flex w-[95%]  m-auto justify-between items-center flex-wrap gap-4  ">
         {todos.data.map((e) => {
           return (
             <div
-              className="bg-slate-100 shadow shadow-black/20  w-[30%] text-center flex flex-col h-64 space-y-12 rounded p-2"
+              className="  w-[30%] text-center flex flex-col h-64 space-y-8   bg-gradient-to-r from-purple-700 to-pink-600 rounded-lg p-6 shadow-lg text-white"
               key={e.id}
             >
               <span className="w-fit  bg-gray-300/80 p-0.5 rounded ">
@@ -114,13 +114,13 @@ const Counter = observer(() => {
               </span>
               <h1 className=" bg-gray-300/80 rounded">{e.name}</h1>
               <button
-                className="bg-red-600 rotate-12 w-fit m-auto  mb-2 rounded p-0.5"
+                className="bg-gradient-to-r from-red-500 to-black/60 rounded-lg p-1  shadow-lg text-white"
                 onClick={() => todos.delete(e.id)}
               >
                 del
               </button>
               <button
-                className="bg-green-500 rotate-12 w-fit m-auto   rounded p-0.5"
+                className="bg-gradient-to-r from-green-400 to-green-800 rounded-lg p-1 shadow-lg text-white"
                 onClick={() => outputEdFunct(e)}
               >
                 ed
